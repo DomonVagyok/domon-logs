@@ -15,7 +15,6 @@ RegisterNetEvent('domon-logs:log', function(nev, cim, szin, uzenet)
 end)
 
 AddEventHandler('playerConnecting', function()
-    print('anyad')
     local jatekos = 'Játékos: **'..GetPlayerName(source)..'**'
     local ids = ExtractIdentifiers(source)
     local steam = '\nSteam ID: **'..ids.steam..'**'
@@ -26,7 +25,6 @@ AddEventHandler('playerConnecting', function()
 end)
 
 AddEventHandler('playerDropped', function()
-    print('anyad')
     local jatekos = 'Játékos: **'..GetPlayerName(source)..'**'
     local ids = ExtractIdentifiers(source)
     local steam = '\nSteam ID: **'..ids.steam..'**'
